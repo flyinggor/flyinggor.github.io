@@ -8,8 +8,8 @@ tags:
 author: 'GeniusVoler'
 ---
 #跳转QQ聊天代码：
-
-##//获取包信息
+	 
+//获取包信息
 
 	public static booleanisQQClientAvailable(Context context) {
 		finalPackageManager packageManager = context.getPackageManager();
@@ -27,7 +27,7 @@ author: 'GeniusVoler'
 
 	}
 
-##//跳转QQ
+//跳转QQ
 
 	String url ="mqqwpa://im/chat?chat_type=wpa&uin=你的QQ号";
 	if(isQQClientAvailable(getContext())) {
