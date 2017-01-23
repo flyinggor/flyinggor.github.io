@@ -7,25 +7,24 @@ tags:
      - android
 author: 'GeniusVoler'
 ---
-#跳转QQ聊天代码：
+跳转QQ聊天代码：
 	 
 //获取包信息
 
-
-`public static booleanisQQClientAvailable(Context context) {
-finalPackageManager packageManager = context.getPackageManager();
-	List pinfo = packageManager.getInstalledPackages(0);
-		if(pinfo !=null) {
-			for(inti =0;i < pinfo.size();i++) {
-			String pn = pinfo.get(i).packageName;
-			if(pn.equals("com.tencent.mobileqq")) {
-					return true;
+	public static booleanisQQClientAvailable(Context context) {
+		finalPackageManager packageManager = context.getPackageManager();
+		List pinfo = packageManager.getInstalledPackages(0);
+			if(pinfo !=null) {
+				for(inti =0;i < pinfo.size();i++) {
+				String pn = pinfo.get(i).packageName;
+				if(pn.equals("com.tencent.mobileqq")) {
+						return true;
+				}
 			}
 		}
+	
+		return false;
 	}
-
-	return false;
-}`
 
 //跳转QQ
 
