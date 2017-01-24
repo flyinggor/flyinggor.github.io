@@ -7,9 +7,9 @@ tags:
      - android
 author: 'GeniusVoler'
 ---
-跳转QQ聊天代码：
+# 跳转QQ聊天代码：
 	 
-//获取包信息
+# //获取包信息
 
 	public static booleanisQQClientAvailable(Context context) {
 		finalPackageManager packageManager = context.getPackageManager();
@@ -18,7 +18,7 @@ author: 'GeniusVoler'
 				for(inti =0;i < pinfo.size();i++) {
 				String pn = pinfo.get(i).packageName;
 				if(pn.equals("com.tencent.mobileqq")) {
-						return true;
+					return true;
 				}
 			}
 		}
@@ -26,7 +26,7 @@ author: 'GeniusVoler'
 		return false;
 	}
 
-//跳转QQ
+# //跳转QQ
 
 	String url ="mqqwpa://im/chat?chat_type=wpa&uin=你的QQ号";
 	if(isQQClientAvailable(getContext())) {
