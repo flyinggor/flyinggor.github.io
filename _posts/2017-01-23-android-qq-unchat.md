@@ -9,10 +9,8 @@ author: 'GeniusVoler'
 ---
 # 跳转QQ聊天代码：
 	 
-## //获取包信息
-
-	'public static booleanisQQClientAvailable(Context context) {
-	  	finalPackageManager packageManager = context.getPackageManager();
+	public static booleanisQQClientAvailable(Context context) {
+		finalPackageManager packageManager = context.getPackageManager();
 		List pinfo = packageManager.getInstalledPackages(0);
 		if(pinfo !=null) {
 			for(inti =0;i < pinfo.size();i++) {
@@ -22,9 +20,8 @@ author: 'GeniusVoler'
 				}
 			}
 		}
-	return false;
-	}'
-
+		return false;
+	}
 
 ## //跳转QQ
 
