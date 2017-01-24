@@ -9,24 +9,24 @@ author: 'GeniusVoler'
 ---
 # 跳转QQ聊天代码：
 	 
-# //获取包信息
+## //获取包信息
 
-	public static booleanisQQClientAvailable(Context context) {
-		finalPackageManager packageManager = context.getPackageManager();
+	'public static booleanisQQClientAvailable(Context context) {
+	  	finalPackageManager packageManager = context.getPackageManager();
 		List pinfo = packageManager.getInstalledPackages(0);
-			if(pinfo !=null) {
-				for(inti =0;i < pinfo.size();i++) {
+		if(pinfo !=null) {
+			for(inti =0;i < pinfo.size();i++) {
 				String pn = pinfo.get(i).packageName;
 				if(pn.equals("com.tencent.mobileqq")) {
 					return true;
 				}
 			}
 		}
-	
-		return false;
-	}
+	return false;
+	}'
 
-# //跳转QQ
+
+## //跳转QQ
 
 	String url ="mqqwpa://im/chat?chat_type=wpa&uin=你的QQ号";
 	if(isQQClientAvailable(getContext())) {
