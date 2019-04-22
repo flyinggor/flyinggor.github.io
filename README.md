@@ -1,2 +1,2 @@
 # flyinggor.github.io
-http://okokok.pro/
+Talk is cheap. Show me the code.
